@@ -1,0 +1,11 @@
+spring:
+  datasource:
+      url: jdbc:postgresql://localhost:5432/ecobank
+      username: postgres
+      password: keurmassar
+  jpa:
+    hibernate:
+      ddl-auto: update
+    database: postgresql
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    show-sql: true
