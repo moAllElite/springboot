@@ -15,7 +15,6 @@ import lombok.experimental.SuperBuilder;
 public class Address extends  AbstractEntity{
     @Column(nullable = false,length = 80)
     private String  street;
-
     private int houseNumber;
     private  int    zipCode;
     @Column(nullable = false,length = 80)
