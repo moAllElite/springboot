@@ -15,7 +15,7 @@ import java.time.LocalDate;
 @AllArgsConstructor
 @SuperBuilder
 public class Account    extends  AbstractEntity {
-    @Column(length = 100,nullable = false)
+
     private String iban;
     @OneToOne
     @JoinColumn(name = "id_user")

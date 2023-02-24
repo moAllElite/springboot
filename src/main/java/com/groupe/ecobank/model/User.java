@@ -12,14 +12,9 @@ import java.util.List;
 @Entity
 @Table(name = "_user")
 public class User extends  AbstractEntity{
-
-    @Column(length = 50,nullable = false)
     private String firstName;
-    @Column(length = 50,nullable = false)
     private String lastName;
-    @Column(length = 100,nullable = false)
     private String email;
-    @Column(length = 100,nullable = false)
     private  String password;
     @Column
     private boolean  active;

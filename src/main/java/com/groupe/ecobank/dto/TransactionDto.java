@@ -5,6 +5,7 @@ import com.groupe.ecobank.model.TransactionType;
 import com.groupe.ecobank.model.User;
 import jakarta.persistence.EnumType;
 import jakarta.persistence.Enumerated;
+import jakarta.validation.constraints.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
@@ -19,9 +20,11 @@ import java.math.BigDecimal;
 @Builder
 public class TransactionDto {
     private Integer id;
+
     private BigDecimal amount;
     @Enumerated(EnumType.STRING)
     private TransactionType type;
+
     private String destinationIban;
     private Integer userId;
     // on transforme un objet dto en entity

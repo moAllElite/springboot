@@ -13,13 +13,12 @@ import lombok.experimental.SuperBuilder;
 @AllArgsConstructor
 @SuperBuilder
 public class Address extends  AbstractEntity{
-    @Column(nullable = false,length = 80)
     private String  street;
     private int houseNumber;
     private  int    zipCode;
-    @Column(nullable = false,length = 80)
+
     private  String city;
-    @Column(nullable = false,length = 80)
+
     private String country;
     @OneToOne
     @JoinColumn(name = "id_user")

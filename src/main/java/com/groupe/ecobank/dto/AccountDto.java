@@ -1,6 +1,8 @@
 package com.groupe.ecobank.dto;
 
 import com.groupe.ecobank.model.Account;
+import jakarta.validation.constraints.NotEmpty;
+import jakarta.validation.constraints.NotNull;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
@@ -13,7 +15,7 @@ import lombok.Setter;
 public class AccountDto {
     private Integer id;
     private String iban;
-   // private Integer  userId;
+
     private UserDto user;
     //on transforme un objet dto en entity
     public static AccountDto fromEntity(Account account){

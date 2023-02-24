@@ -2,6 +2,9 @@ package com.groupe.ecobank.dto;
 
 import com.groupe.ecobank.model.Contact;
 import com.groupe.ecobank.model.User;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotEmpty;
+import jakarta.validation.constraints.NotNull;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
@@ -13,8 +16,11 @@ import lombok.Setter;
 @Builder
 public class ContactDto {
     private Integer id;
+
     private String firstName;
+
     private String lastName;
+
     private String iban;
     private  Integer userId;
 

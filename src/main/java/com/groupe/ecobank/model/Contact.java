@@ -13,11 +13,8 @@ import lombok.experimental.SuperBuilder;
 @AllArgsConstructor
 @SuperBuilder
 public class Contact extends  AbstractEntity{
-    @Column(length = 100,nullable = false)
     private String firstName;
-    @Column(length = 100,nullable = false)
     private String lastName;
-    @Column(length = 100,nullable = false)
     private String iban;
     @ManyToOne
     @JoinColumn(name = "id_user")
