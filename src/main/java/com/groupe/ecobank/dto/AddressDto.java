@@ -22,12 +22,19 @@ public class AddressDto {
     @NotNull
     @NotEmpty
     private int houseNumber;
-
+    @NotNull(message = "le champs  zip code ne doit pas être vide")
+    @NotEmpty(message = "le champs  zip code de passe ne doit pas être vide")
+    @NotBlank(message = "le champs de zip code ne doit pas être vide")
+    @Positive(message = "le champs de zip code ne doit pas être vide")
     private  int    zipCode;
     private  String city;
-
+    @NotNull(message = "le champs  country ne doit pas être vide")
+    @NotEmpty(message = "le champs  country  de passe ne doit pas être vide")
+    @NotBlank(message = "le champs de country  code ne doit pas être vide")
     private String country;
-
+    @NotNull
+    @NotEmpty
+    @Positive
     private Integer userId;
 
     //on transforme un objet entity en objet dto

@@ -1,4 +1,4 @@
-package com.groupe.ecobank.exceptions;
+package com.groupe.ecobank.validator;
 
 import com.groupe.ecobank.exceptions.ObjectValidationException;
 import jakarta.validation.ConstraintViolation;
