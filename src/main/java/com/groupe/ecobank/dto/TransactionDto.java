@@ -28,7 +28,7 @@ public class TransactionDto {
     private String destinationIban;
     private Integer userId;
     // on transforme un objet dto en entity
-    private  static  TransactionDto fromEntity(Transaction transaction){
+    public static  TransactionDto fromEntity(Transaction transaction){
         return TransactionDto.builder()
                 .id(transaction.getId())
                 .amount(transaction.getAmount())
@@ -38,7 +38,7 @@ public class TransactionDto {
                 .build();
     }
     //on transforme un objet entity en objet dto
-    private  static  Transaction toEntity(TransactionDto transaction){
+    public static  Transaction toEntity(TransactionDto transaction){
         return Transaction.builder()
                 .id(transaction.getId())
                 .amount(transaction.getAmount())

@@ -24,7 +24,7 @@ public class ContactDto {
     private String iban;
     private  Integer userId;
 
-    private static ContactDto   fromEntity(Contact contact){
+    public static ContactDto   fromEntity(Contact contact){
         return ContactDto.builder()
                 .id(contact.getId())
                 .firstName(contact.getFirstName())
@@ -33,7 +33,7 @@ public class ContactDto {
                 .userId(contact.getUser().getId())
                 .build();
     }
-    private static Contact toEntity(ContactDto contact){
+    public static Contact toEntity(ContactDto contact){
         return Contact.builder()
                 .id(contact.getId())
                 .firstName(contact.getFirstName())
