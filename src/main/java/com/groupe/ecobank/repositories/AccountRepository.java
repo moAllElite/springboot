@@ -6,6 +6,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 
 import java.util.Date;
+import java.util.Optional;
 
 public interface AccountRepository extends JpaRepository<Account,Integer> {
     //select * from account like iban="de55"
@@ -15,4 +16,6 @@ public interface AccountRepository extends JpaRepository<Account,Integer> {
     Account searchByCreationDate(Date creationDate );
     @Query(value = "select  * from account where  id=:id group by id",nativeQuery = true)
     Account searchByIdNative(String id);
+
+    Optional<Account> findByIban(String iban);
 }
