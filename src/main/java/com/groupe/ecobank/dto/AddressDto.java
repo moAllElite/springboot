@@ -38,7 +38,7 @@ public class AddressDto {
     private Integer userId;
 
     //on transforme un objet entity en objet dto
-    private static AddressDto fromEntity(Address address){
+    public static AddressDto fromEntity(Address address){
         return  AddressDto.builder()
                 .id(address.getId())
                 .street(address.getStreet())
@@ -50,7 +50,7 @@ public class AddressDto {
                 .build();
     }
     // on transforme un objet dto en entity
-    private static Address toEntity(AddressDto address){
+    public static Address toEntity(AddressDto address){
         return  Address.builder()
                 .id(address.getId())
                 .street(address.getStreet())
