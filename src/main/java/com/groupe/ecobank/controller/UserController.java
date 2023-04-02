@@ -12,7 +12,7 @@ import java.util.List;
 /**
  * pour le request mapping convention
  * nom de la ressource au pluriel ex:users
- * readabelaté pas de tiret de 8 ou de camel case
+ * readabelaté avec des tirets de 6 ou de camel case
  */
 @RequestMapping("/users")
 @RequiredArgsConstructor
