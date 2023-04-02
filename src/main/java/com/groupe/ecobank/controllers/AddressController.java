@@ -1,4 +1,4 @@
-package com.groupe.ecobank.controller;
+package com.groupe.ecobank.controllers;
 
 import com.groupe.ecobank.dto.AddressDto;
 import com.groupe.ecobank.service.IAddressService;

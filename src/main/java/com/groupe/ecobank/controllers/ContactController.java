@@ -1,9 +1,8 @@
-package com.groupe.ecobank.controller;
+package com.groupe.ecobank.controllers;
 
 import com.groupe.ecobank.dto.ContactDto;
 import com.groupe.ecobank.service.IContactService;
 import lombok.AllArgsConstructor;
-import org.springframework.http.RequestEntity;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 

@@ -1,4 +1,4 @@
-package com.groupe.ecobank.controller;
+package com.groupe.ecobank.controllers;
 
 import com.groupe.ecobank.dto.TransactionDto;
 import com.groupe.ecobank.service.ITransactionService;
