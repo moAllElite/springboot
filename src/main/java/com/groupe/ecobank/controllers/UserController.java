@@ -9,11 +9,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-/**
- * pour le request mapping convention
- * nom de la ressource au pluriel ex:users
- * readabelaté avec des tirets de 6 ou de camel case
- */
+
 @RequestMapping("/users")
 @RequiredArgsConstructor
 public class UserController {

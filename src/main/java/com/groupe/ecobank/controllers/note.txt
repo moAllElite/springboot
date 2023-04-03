@@ -1,0 +1,5 @@
+/**
+ * pour le request mapping convention
+ * nom de la ressource au pluriel ex:users
+ * readabelaté avec des tirets de 6 ou de camel case
+ */
