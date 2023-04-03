@@ -14,7 +14,7 @@ import java.util.List;
 public class AddressController {
     private  final IAddressService service;
 
-    @GetMapping("/")
+    @PostMapping("/")
     public ResponseEntity<Integer> save(
          @RequestBody AddressDto addressDto
     ){
