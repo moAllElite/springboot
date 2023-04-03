@@ -1,8 +1,8 @@
 spring:
   datasource:
-      url: jdbc:postgresql://localhost:5432/ecobank
-      username: postgres
-      password: keurmassar
+    url: jdbc:postgresql://localhost:5432/ecobank
+    username: postgres
+    password: keurmassar
   jpa:
     hibernate:
       ddl-auto: update

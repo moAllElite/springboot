@@ -1,4 +1,4 @@
-# Projet spring boot application bancaire stastitiques et dashboard 
+# Projet spring boot application bancaire statistiques et dashboard 
 # Installation de maven
 
 https://maven.apache.org/download.cgi
