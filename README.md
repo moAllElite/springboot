@@ -17,8 +17,8 @@ Run `mvn verify` génère le projet, exécute tous les cas de test et vérifie l
 
 ## Mvn compile
 Run `mvn compile`compile les classes Java source du projet.
-#Spring boot 
-##Création projet 
+# Spring boot 
+## Création projet 
 Run https://start.spring.io/
 ## Ajout des dépendances dans le projet
 ### Lombok
