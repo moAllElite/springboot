@@ -1,5 +1,4 @@
-Download maven
-https://maven.apache.org/download.cgi
+Download maven  https://maven.apache.org/download.cgi
 
 #mvn verify
 <<<<
