@@ -1,28 +1,30 @@
 # Documentation
 Ce projet spring boot application bancaire statistiques et dashboard
-
-# Installation de maven
+## Création projet
+````
+ https://start.spring.io/
+````
+# Installation  et configuration de maven
 Vous devez ajouter télécharger maven depuis ici [https://maven.apache.org/download.cgi]
 
-## Maven clean
 
-Run `mvn clean install` pour nettoyer le projet Maven en supprimant le répertoire cible.
+Vous pouvez utiliser pour nettoyer le projet Maven en supprimant le répertoire cible.
+````
+mvn clean install
+````
 
-## Maven install
-
-Run `mvn install`  pour installer le package dans le référentiel local, pour l'utiliser comme dépendance dans d'autres projets localement.
-
-## Mvn verify
-
-Run `mvn verify` pour génèrer le projet, exécute tous les cas de test et vérifie les résultats des tests d'intégration pour s'assurer que les critères de qualité sont respectés 
-
-## Mvn compile
-Run `mvn compile`compile les classes Java source du projet.
-# Spring boot 
-## Création projet 
-Run https://start.spring.io/
-## Ajout des dépendances dans le projet
+Vous pouvez  installer le package dans le référentiel local, pour l'utiliser comme dépendance dans d'autres projets localement.
+````
+mvn install` 
+````
+Pour compiler les classes Java source du projet.
+````
+mvn compile
+````
+# Configuration et gestion des dépendances
+Ajouter des dépendances dans le projet dans le pom.xml
 ### Lombok
+
 ````  
 <dependency>
   <groupId>org.projectlombok</groupId>
