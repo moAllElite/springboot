@@ -13,6 +13,7 @@ import lombok.Setter;
 import org.springframework.security.core.parameters.P;
 
 import java.math.BigDecimal;
+import java.time.LocalDate;
 
 @Getter
 @Setter
@@ -24,15 +25,16 @@ public class TransactionDto {
     private BigDecimal amount;
     @Enumerated(EnumType.STRING)
     private TransactionType type;
-
     private String destinationIban;
     private Integer userId;
+    private LocalDate transactionDate;
     // on transforme un objet dto en entity
     public static  TransactionDto fromEntity(Transaction transaction){
         return TransactionDto.builder()
                 .id(transaction.getId())
                 .amount(transaction.getAmount())
                 .type(transaction.getType())
+                .transactionDate(transaction.getTransactionDate())
                 .destinationIban(transaction.getDestinationIban())
                 .userId(transaction.getUser().getId())
                 .build();
@@ -43,6 +45,7 @@ public class TransactionDto {
                 .id(transaction.getId())
                 .amount(transaction.getAmount())
                 .type(transaction.getType())
+                .transactionDate(transaction.getTransactionDate())
                 .destinationIban(transaction.getDestinationIban())
                 .user(
                         User.builder()

@@ -21,12 +21,12 @@ public class UserDto {
     @NotNull(message = "le champs  email ne doit pas être vide")
     @NotEmpty(message = "le champs  email ne doit pas être vide")
     @NotBlank(message = "le champs  email ne doit pas être vide")
-    @Email
+    @Email(message = "L'email saisi n'est pas conforme")
     private String email;
     @NotNull(message = "le champs  mot de passe ne doit pas être vide")
     @NotEmpty(message = "le champs  mot de passe ne doit pas être vide")
     @NotBlank(message = "le champs  mot de passe ne doit pas être vide")
-    @Size(min = 8,max = 16,message = "Erreur le mot de passe doit être au moins de 8 caractères")
+    @Size(min = 8,max = 16,message = "Erreur le mot de passe doit être compris entre 8 et 16 caractère")
     private  String password;
     //on transforme un objet dto en objet entity
     public  static UserDto fromEntity(User user){

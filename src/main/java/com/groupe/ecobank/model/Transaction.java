@@ -21,6 +21,8 @@ public class Transaction extends  AbstractEntity{
     @Enumerated(EnumType.STRING)
     private  TransactionType type;
     private String destinationIban;
+    @Column(updatable = false)
+    private LocalDate transactionDate;
     @ManyToOne
     @JoinColumn(name = "id_user")
     private User user;
