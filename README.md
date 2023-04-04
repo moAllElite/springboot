@@ -1,5 +1,5 @@
 # Documentation
-Ce projet spring boot application bancaire statistiques et dashboard
+Ce projet spring boot  application bancaire dans laquelle  des statistiques seront fournies et tableau de bord (dashbord)
 ## Création projet
 ````
  https://start.spring.io/
