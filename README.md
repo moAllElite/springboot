@@ -1,5 +1,10 @@
 # Documentation
-Ce projet spring boot  application bancaire dans laquelle  des statistiques seront fournies et tableau de bord (dashbord)
+Ce projet spring boot  application bancaire dans laquelle  des statistiques seront fournies et table0au de bord (dashbord).
+Dans ce projet nous aurons recours JWT(Json Web token) token pour assurer la sécurité  .
+L'utilisateur pourra effectuer des transactions ;des dépôts et transferts suivant un iban.
+
+
+
 ## Création projet
 ````
  https://start.spring.io/
@@ -40,4 +45,19 @@ Ajouter des dépendances dans le projet dans le pom.xml
     <artifactId>iban4j</artifactId>
     <version>3.2.4-RELEASE</version>
 </dependency>
+``````
+Vous aurez besoin de des dépendances web et security pour le service d'authentifcation et se qécurité
+### Spring boot starter web 
+``````
+<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-web</artifactId>
+</dependency>
+``````
+### Spring security
+``````
+<dependency> 
+    <groupId>org.springframework.boot</groupId> 
+    <artifactId>spring-boot-starter-security</artifactId> 
+</dependency> 
 ``````
