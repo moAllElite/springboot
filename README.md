@@ -46,7 +46,7 @@ Ajouter des dépendances dans le projet dans le pom.xml
     <version>3.2.4-RELEASE</version>
 </dependency>
 ``````
-Vous aurez besoin de des dépendances web et security pour le service d'authentifcation et se qécurité
+Vous aurez besoin de des dépendances web et security pour le service d'authentifcation et se sécurité
 ### Spring boot starter web 
 ``````
 <dependency>
@@ -61,3 +61,11 @@ Vous aurez besoin de des dépendances web et security pour le service d'authenti
     <artifactId>spring-boot-starter-security</artifactId> 
 </dependency> 
 ``````
+### jsonwebtoken (JWt)
+`````
+ <dependency>
+   <groupId>io.jsonwebtoken</groupId>
+   <artifactId>jjwt</artifactId>
+   <version>0.9.1</version>
+ </dependency>
+`````

@@ -37,7 +37,11 @@
             <artifactId>spring-boot-starter-validation</artifactId>
             <version>3.0.4</version>
         </dependency>
-
+        <dependency>
+            <groupId>io.jsonwebtoken</groupId>
+            <artifactId>jjwt</artifactId>
+            <version>0.9.1</version>
+        </dependency>
         <!-- https://mvnrepository.com/artifact/org.iban4j/iban4j -->
         <dependency>
             <groupId>org.iban4j</groupId>
