@@ -78,7 +78,7 @@ spring:
     database-platform: org.hibernate.dialect.PostgreSQLDialect
     show-sql: true
 ````
-Dans le cas ou choissez le applicaction properties vous aurez la configuration suivant:
+Dans le cas ou choissez de nommez votre ressource en applicaction properties vous aurez la configuration suivant:
 ````
 spring.datasource.driverClassName: org.postgresql.Driver
 spring.datasource.url: jdbc:postgresql://localhost:5432/db_name
