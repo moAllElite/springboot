@@ -3,8 +3,6 @@ Ce projet spring boot  application bancaire dans laquelle  des statistiques sero
 Dans ce projet nous aurons recours JWT(Json Web token) token pour assurer la sécurité  .
 L'utilisateur pourra effectuer des transactions ;des dépôts et transferts suivant un iban.
 
-
-
 ## Création projet
 ````
  https://start.spring.io/
@@ -12,12 +10,10 @@ L'utilisateur pourra effectuer des transactions ;des dépôts et transferts suiv
 # Installation  et configuration de maven
 Vous devez ajouter télécharger maven depuis ici [https://maven.apache.org/download.cgi]
 
-
 Vous pouvez utiliser pour nettoyer le projet Maven en supprimant le répertoire cible.
 ````
 mvn clean install
 ````
-
 Vous pouvez  installer le package dans le référentiel local, pour l'utiliser comme dépendance dans d'autres projets localement.
 ````
 mvn install` 
@@ -43,7 +39,7 @@ Ajouter des dépendances dans le projet dans le pom.xml
     <version>3.2.4-RELEASE</version>
 </dependency>
 ``````
-Vous aurez besoin de des dépendances web et security pour le service d'authentifcation et se sécurité
+Vous aurez besoin de des dépendances web et security pour le service d'authentifcation et la sécurité
 ### Spring boot starter web 
 ``````
 <dependency>
@@ -81,4 +77,16 @@ spring:
     database: postgresql
     database-platform: org.hibernate.dialect.PostgreSQLDialect
     show-sql: true
+````
+Dans le cas ou choissez le applicaction properties vous aurez la configuration suivant:
+````
+spring.datasource.driverClassName: org.postgresql.Driver
+spring.datasource.url: jdbc:postgresql://localhost:5432/db_name
+spring.datasource.username: 
+spring.datasource.password: 
+spring.jpa.show-sql: true
+spring.jpa.hibernate.ddl-auto: update
+spring.jpa.properties.database: postgresql
+spring.jpa.properties.database-platform: org.hibernate.dialect.PostgreSQLDialect
+
 ````
