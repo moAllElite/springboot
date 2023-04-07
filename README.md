@@ -22,10 +22,7 @@ Vous pouvez  installer le package dans le référentiel local, pour l'utiliser c
 ````
 mvn install` 
 ````
-Pour compiler les classes Java source du projet.
-````
-mvn compile
-````
+
 # Configuration et gestion des dépendances
 Ajouter des dépendances dans le projet dans le pom.xml
 ### Lombok
@@ -69,3 +66,19 @@ Vous aurez besoin de des dépendances web et security pour le service d'authenti
    <version>0.9.1</version>
  </dependency>
 `````
+# Usage
+Vous pouvez modifier pour la connexion à la connexion à la base de donnée dans   application.yaml
+````
+spring:
+  datasource:
+    driverClassName: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/db_name
+    username: 
+    password: 
+  jpa:
+    hibernate:
+      ddl-auto: update
+    database: postgresql
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    show-sql: true
+````
