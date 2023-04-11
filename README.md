@@ -22,7 +22,7 @@ mvn install`
 # Configuration et gestion des dépendances
 Ajouter des dépendances dans le projet dans le pom.xml
 ### Lombok
-
+Vous pouvez utiliser lombok pour génèrer des annotations @Getter, @Setter ,@Builder ...
 ````  
 <dependency>
   <groupId>org.projectlombok</groupId>
