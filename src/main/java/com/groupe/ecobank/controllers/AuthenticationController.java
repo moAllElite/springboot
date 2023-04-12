@@ -22,9 +22,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class AuthenticationController {
     //injection de dépendances
     private final IUserService userService;
-    private final AuthenticationManager authManager;
-    private final UserRepository userRepository;
-    private final JwtUtils jwtUtils;
+
     @PostMapping("/signup")
     public ResponseEntity<AuthenticationResponse>register(
             @RequestBody UserDto user)
@@ -38,15 +36,5 @@ public class AuthenticationController {
         /***
          * pour l'authentification du user
          */
-         authManager.authenticate(
-                new UsernamePasswordAuthenticationToken(request.getEmail(),request.getPassword())
-        );
-         final UserDetails user=userRepository.findByEmail(request.getEmail()).get();
-         final String token=jwtUtils.generateToken(user);
-         return  ResponseEntity.ok(
-                 AuthenticationResponse.builder()
-                         .token(token)
-                         .build()
-         );
-    }
+         return  ResponseEntity.ok(userService.authenticate(request));    }
 }

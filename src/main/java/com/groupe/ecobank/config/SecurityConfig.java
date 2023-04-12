@@ -12,6 +12,7 @@ import org.springframework.security.config.annotation.authentication.configurati
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.authorization.*;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
+import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.SecurityFilterChain;
@@ -31,10 +32,19 @@ public class SecurityConfig {
                 .csrf().disable()
                 .authorizeRequests(
                         (request)->
-                            request.requestMatchers("**/auth", "**/register")
+                        {
+                            try {
+                            request.requestMatchers("/**/authenticate", "/**/register")
                                     .permitAll()
                                     .anyRequest()
                                     .authenticated()
+                                    .and()
+                                    .sessionManagement()
+                                    .sessionCreationPolicy(SessionCreationPolicy.STATELESS);
+                            }catch (Exception e){
+                                e.printStackTrace();
+                            }
+                        }
                 )
                 .authenticationProvider(authenticationProvider())
                 .addFilterBefore(jwtAuthFilter, UsernamePasswordAuthenticationFilter.class)
