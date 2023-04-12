@@ -1,16 +1,14 @@
 package com.groupe.ecobank.dto;
 
-import com.groupe.ecobank.model.Transaction;
-import com.groupe.ecobank.model.TransactionType;
-import com.groupe.ecobank.model.User;
+import com.groupe.ecobank.models.Transaction;
+import com.groupe.ecobank.models.TransactionType;
+import com.groupe.ecobank.models.User;
 import jakarta.persistence.EnumType;
 import jakarta.persistence.Enumerated;
-import jakarta.validation.constraints.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.Setter;
-import org.springframework.security.core.parameters.P;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;

@@ -1,8 +1,6 @@
 package com.groupe.ecobank.dto;
 
-import com.groupe.ecobank.model.Account;
-import jakarta.validation.constraints.NotEmpty;
-import jakarta.validation.constraints.NotNull;
+import com.groupe.ecobank.models.Account;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;

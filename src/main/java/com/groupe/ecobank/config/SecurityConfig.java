@@ -43,11 +43,11 @@ public class SecurityConfig {
 
         return http.build();
     }
-    /*@Bean
+    @Bean
     public CorsFilter corsFilter(){
         //todo be implemented
         return null;
-    }*/
+    }
     @Bean
     public AuthenticationManager authenticationManager(AuthenticationConfiguration config)throws Exception{
         return config.getAuthenticationManager();

@@ -63,7 +63,8 @@ Vous aurez besoin de des dépendances web et security pour le service d'authenti
  </dependency>
 `````
 # Usage
-Vous pouvez modifier pour la connexion à la connexion à la base de donnée dans   application.yaml
+Vous pouvez modifier pour la connexion à la connexion à la base de donnée dans   application.yaml qui se trouve dans le 
+repertoire src/main/ressources
 ````
 spring:
   datasource:

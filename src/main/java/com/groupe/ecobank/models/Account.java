@@ -1,8 +1,7 @@
-package com.groupe.ecobank.model;
+package com.groupe.ecobank.models;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
-import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.experimental.SuperBuilder;
@@ -12,10 +11,10 @@ import lombok.experimental.SuperBuilder;
 @NoArgsConstructor
 @AllArgsConstructor
 @SuperBuilder
-public class Role   extends  AbstractEntity {
-    private String name;
+public class Account    extends  AbstractEntity {
+
+    private String iban;
     @OneToOne
     @JoinColumn(name = "id_user")
-    private User user;
-
+    private User  user;
 }

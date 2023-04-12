@@ -1,6 +1,6 @@
 package com.groupe.ecobank.repositories;
 
-import com.groupe.ecobank.model.Address;
+import com.groupe.ecobank.models.Address;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface AddressRepository extends JpaRepository<Address,Integer> {

@@ -1,6 +1,6 @@
 package com.groupe.ecobank.dto;
 
-import com.groupe.ecobank.model.User;
+import com.groupe.ecobank.models.User;
 import jakarta.validation.constraints.*;
 import lombok.*;
 

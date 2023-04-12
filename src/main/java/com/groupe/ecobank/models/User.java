@@ -1,4 +1,4 @@
-package com.groupe.ecobank.model;
+package com.groupe.ecobank.models;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;

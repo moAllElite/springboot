@@ -1,7 +1,7 @@
 package com.groupe.ecobank.dto;
 
-import com.groupe.ecobank.model.Address;
-import com.groupe.ecobank.model.User;
+import com.groupe.ecobank.models.Address;
+import com.groupe.ecobank.models.User;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotEmpty;
 import jakarta.validation.constraints.NotNull;

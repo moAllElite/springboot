@@ -1,8 +1,8 @@
 package com.groupe.ecobank.repositories;
 
 import com.groupe.ecobank.dto.TransactionSumDetails;
-import com.groupe.ecobank.model.Transaction;
-import com.groupe.ecobank.model.TransactionType;
+import com.groupe.ecobank.models.Transaction;
+import com.groupe.ecobank.models.TransactionType;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;

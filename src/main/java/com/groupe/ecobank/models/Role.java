@@ -1,23 +1,20 @@
-package com.groupe.ecobank.model;
+package com.groupe.ecobank.models;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
-import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.experimental.SuperBuilder;
-
-import java.time.LocalDate;
 
 @Entity
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
 @SuperBuilder
-public class Account    extends  AbstractEntity {
-
-    private String iban;
+public class Role   extends  AbstractEntity {
+    private String name;
     @OneToOne
     @JoinColumn(name = "id_user")
-    private User  user;
+    private User user;
+
 }

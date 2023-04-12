@@ -1,8 +1,7 @@
-package com.groupe.ecobank.model;
+package com.groupe.ecobank.models;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
-import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.experimental.SuperBuilder;
@@ -12,15 +11,11 @@ import lombok.experimental.SuperBuilder;
 @NoArgsConstructor
 @AllArgsConstructor
 @SuperBuilder
-public class Address extends  AbstractEntity{
-    private String  street;
-    private int houseNumber;
-    private  int    zipCode;
-
-    private  String city;
-
-    private String country;
-    @OneToOne
+public class Contact extends  AbstractEntity{
+    private String firstName;
+    private String lastName;
+    private String iban;
+    @ManyToOne
     @JoinColumn(name = "id_user")
     private User user;
 

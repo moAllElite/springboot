@@ -1,7 +1,6 @@
-package com.groupe.ecobank.model;
+package com.groupe.ecobank.models;
 
 import jakarta.persistence.*;
-import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.experimental.SuperBuilder;

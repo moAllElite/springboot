@@ -1,7 +1,6 @@
 package com.groupe.ecobank.repositories;
 
-import com.groupe.ecobank.model.Account;
-import org.hibernate.mapping.List;
+import com.groupe.ecobank.models.Account;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 
